@@ -1,13 +1,13 @@
 package org.rohit;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class DistCandies {
 	
 	public int candies(int[] c){
 		
-		Set<Integer> s = new HashSet<Integer>();
+		Set<Integer> s = new LinkedHashSet<Integer>();
 		for(int i:c){
 			
 			s.add(i);

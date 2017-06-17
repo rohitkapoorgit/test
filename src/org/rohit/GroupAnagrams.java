@@ -11,7 +11,7 @@ public class GroupAnagrams {
 	public List<List<String>> groupAnagrams(String[] strs) {
 		
         Map<String, List<String>> map = new HashMap<String, List<String>>();
-        Arrays.sort(strs);
+        //Arrays.sort(strs);
         for (String s : strs) {
             char[] ca = s.toCharArray();
             Arrays.sort(ca);
@@ -29,7 +29,8 @@ public class GroupAnagrams {
 		
 		GroupAnagrams test = new GroupAnagrams();
 		String[] array = {"eat", "tea", "tan", "ate", "nat", "bat"};
-		System.out.println(String.valueOf(test.groupAnagrams(array)));
+		//System.out.println(String.valueOf(test.groupAnagrams(array)));
+		System.out.println(test.groupAnagrams(array).toString());
 	}
 
 }

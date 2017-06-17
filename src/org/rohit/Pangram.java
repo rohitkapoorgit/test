@@ -28,13 +28,13 @@ public class Pangram {
 	        
 	        for (char c : set) {
 	        	
-	            sb.append(c);
+	           sb.append(c);
 	            
 	        }
 	        
 	        result = sb.toString();
 	        return result;
-	        //return set;
+	       // return set.toString();
 	       
 	}
 	

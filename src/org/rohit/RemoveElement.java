@@ -20,8 +20,8 @@ public class RemoveElement {
 	public static void main(String[] args){
 		
 		RemoveElement test = new RemoveElement();
-		//int[] a = new int[]{3,2,5,8,3,5,7};
-		//System.out.println(test.removeElement(a,3));
+		int[] a = new int[]{3,2,5,8,3,5,7};
+		System.out.println(test.removeElement(a,3));
 		int[] b = new int[]{3,2,2,3};
 		System.out.println(test.removeElement(b,3));
 	}

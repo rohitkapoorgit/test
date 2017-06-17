@@ -2,7 +2,7 @@ package org.rohit;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
-
+//This can be used to find length of longest substring without repetition
 public class LongestSubWithoutRep {
 	
 	public String longestSub(String s){

@@ -1,5 +1,6 @@
 package org.rohit;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -40,7 +41,7 @@ public class CharacterOccurrence {
 		List<String> finalList = new LinkedList<String>();
 		for(Map.Entry<Character,Integer> j:map.entrySet()){
 			
-			if(j.getValue()>=max){
+			if(j.getValue()==max){
 				
 				list.clear();
 				//max = j.getValue();
@@ -73,8 +74,8 @@ public class CharacterOccurrence {
 		for(String str : test.occurrence("aeftg tyeeti  optef "))
 			System.out.println(str);
 		System.out.println("-----------------------------");
-		for(String str : test.occurrence("Dog is an animal "))
-			System.out.println(str);
+		
+		System.out.println(Arrays.toString(test.occurrence("Dog is an animal ")));
 		
 	}
 

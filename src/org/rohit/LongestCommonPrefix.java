@@ -29,7 +29,7 @@ public class LongestCommonPrefix {
 	public static void main(String[] args){
 		
 		LongestCommonPrefix test = new LongestCommonPrefix();
-		String[] input = {"geeksforgeeks", "geeks", "geebeturn","geek"};
+		String[] input = {"geeksforgeeks", "geks", "geebeturn","geek"};
 		System.out.println(test.longestCommonPrefix(input));
 	}
 

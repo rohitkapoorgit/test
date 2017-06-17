@@ -1,12 +1,13 @@
 package org.rohit;
 
-import java.util.HashMap;
-
+import java.util.LinkedHashMap;
+import java.util.Map;
+//contiguous subarray of 0 and 1 
 public class ContiguousArray {
 	
 	public int contArrayLength(int[] a){
 		
-		HashMap<Integer,Integer> m = new HashMap<Integer, Integer>();
+		Map<Integer,Integer> m = new LinkedHashMap<Integer, Integer>();
 		m.put(0, -1);
 		int count = 0;
 		int maxLength = 0;

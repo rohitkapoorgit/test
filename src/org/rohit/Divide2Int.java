@@ -6,8 +6,12 @@ public class Divide2Int {
 		
 		int i=0;
 		int j=1;
-		if(dividend<0 || divisor<0){
-			j = -1;
+		if(dividend<0){
+			j = -1*j;
+		}
+		
+		if(divisor<0){
+			j = -1*j;
 		}
 		
 		dividend = Math.abs(dividend);

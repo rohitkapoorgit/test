@@ -24,7 +24,8 @@ public class LetterCombPhoneNumber {
 	public static void main(String[] args){
 		
 		LetterCombPhoneNumber test = new LetterCombPhoneNumber();
-		System.out.println(Arrays.toString(test.letterCombinations("23").toArray()));
+		//System.out.println(Arrays.toString(test.letterCombinations("23").toArray()));
+		System.out.println(test.letterCombinations("23").toString());
 	}
 
 }

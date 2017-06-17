@@ -13,7 +13,7 @@ public class UniquePathsObstacles {
 				
 				if(path[i][j] ==1){
 					
-					path[i][j] = 0;					
+					path[i][j] = 0;				
 				}
 				
 				else if(i==0 && j==0){

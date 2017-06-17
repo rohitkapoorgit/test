@@ -1,5 +1,6 @@
 package org.rohit;
 
+//nth sequence
 public class CountSay {
 	
 	public String countAndSay(int n) {

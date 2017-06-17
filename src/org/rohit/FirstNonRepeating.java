@@ -24,19 +24,14 @@ public class FirstNonRepeating {
 			
 		}
 		
-		boolean found = false;
+		//boolean found = false;
 		for(Map.Entry<Character,Integer> j:map.entrySet()){
 			
 			if(j.getValue()==1){
 				
-				found = true;
+				//found = true;
 				return j.getKey().toString();
 			}
-		}
-		
-		if(!found){
-			
-			return "No non repeating";
 		}
 		
 		return "";

@@ -35,9 +35,12 @@ public class MergeSortedArray {
 	public static void main(String[] args){
 		
 		MergeSortedArray test = new MergeSortedArray();
-		int[] a = new int[]{1,2,3,3,4,6,0,0,0,0,0,0,0,0};
+		int[] a = new int[]{1,2,3,3,4,10,0,0,0,0,0,0,0,0};
 		int[] b = new int[]{3,4,5,6,7,8,9,9};
 		test.merge(a,6,b,8);
+		int[] a1 = new int[]{5,6,7,8,9,10,0,0,0,0,0,0,0,0};
+		int[] b1 = new int[]{3,4,5,6,7,8,9,9};
+		test.merge(a1,6,b1,8);
 	}
 
 }

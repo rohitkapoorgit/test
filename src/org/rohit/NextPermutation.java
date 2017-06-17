@@ -15,10 +15,20 @@ public class NextPermutation {
 		if(i>=0){
 			
 			int j = a.length -1;
-			while(a[j]<=a[i]){
+			int diff = Integer.MAX_VALUE;
+			int number = a[i];
+			for(int k=i+1;k<a.length;k++){
 				
-				j--;
+				if(a[k]>number && Math.abs(a[k]-number)<diff ){
+					
+					diff = Math.abs(a[k]-number);
+					j =k;
+				}
 			}
+			//while(a[j]<=a[i]){
+				
+				//j--;
+			//}
 			
 			swap(a,i,j);
 			

@@ -7,8 +7,9 @@ public class ShortestUnsortedSubArray {
 	public int shortestUnsorted(int[] a){
 		
 		int l = a.length; int r = 0;
-		int[] b = new int[a.length];
-		System.arraycopy(a, 0, b, 0, a.length);
+		//int[] b = new int[a.length];
+		//System.arraycopy(a, 0, b, 0, a.length);
+		int[] b = Arrays.copyOfRange(a, 0, a.length);
 		Arrays.sort(b);
 		for(int i=0;i<a.length;i++){
 			

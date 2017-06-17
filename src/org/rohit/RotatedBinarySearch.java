@@ -50,8 +50,8 @@ public class RotatedBinarySearch {
 	public static void main(String[] args){
 		
 		RotatedBinarySearch test = new RotatedBinarySearch();
-		int[] array = {2,4,5,7,8,9,12,15};
-		System.out.println(test.binSearch(array, 9));
+		int[] array = {8,9,12,15,2,4,5,7};
+		System.out.println(test.binSearch(array, 5));
 	}
 
 }

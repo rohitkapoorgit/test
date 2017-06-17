@@ -20,7 +20,7 @@ public class ATOI {
 	public static void main(String[] args){
 		
 		ATOI test = new ATOI();
-		System.out.println(test.atoi("4683"));
+		System.out.println(test.atoi("483"));
 		
 	}
 
