@@ -17,7 +17,8 @@ public class ContiguousArray {
 				count+=-1;
 			else
 				count+=1;
-			
+			//We could also find array start and end
+			//if map has key, find length, if this length is > max, this is maxLength, and end=i, start=m.get(count) 
 			if(m.containsKey(count))
 				maxLength = Math.max(maxLength, i-m.get(count));
 			else
@@ -32,6 +33,10 @@ public class ContiguousArray {
 		ContiguousArray test = new ContiguousArray();
 		int[] inp = {0,1,0,0,1,1,0};
 		System.out.println(test.contArrayLength(inp));
+		int[] inp1 = {0};
+		System.out.println(test.contArrayLength(inp1));
+		int[] inp2 = {1,0};
+		System.out.println(test.contArrayLength(inp2));
 	}
 
 }

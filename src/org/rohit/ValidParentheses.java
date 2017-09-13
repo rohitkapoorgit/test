@@ -1,11 +1,15 @@
 package org.rohit;
-
+//Length of string should be even
 import java.util.Stack;
 
 public class ValidParentheses {
 	
 	public boolean isValid(String s){
 		
+		if(s==null|| s.length()%2==1 || s.isEmpty()){
+			
+			return false;
+		}
 		Stack<Character> l = new Stack<Character>();
 		
 		for(int i=0; i<s.length();i++){
@@ -44,5 +48,6 @@ public class ValidParentheses {
 		
 		ValidParentheses test = new ValidParentheses();
 		System.out.println(test.isValid("(){[}]"));
+		System.out.println(test.isValid(""));
 	}
 }

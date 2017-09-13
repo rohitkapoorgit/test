@@ -1,8 +1,9 @@
 package org.rohit;
-
+//If indices are required, use map to store array[i] and its index.
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
 //import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -11,9 +12,13 @@ public class TwoNumberSumSubsetArray3 {
 		   //String[]
 	public List<List<Integer>> sumSubset(int[] array, int Sum){
 		
+		if(array==null || array.length<2){
+			
+			return new ArrayList<List<Integer>>();
+		}
 		Set<Integer> set = new LinkedHashSet<Integer>();
 		//List<Integer> l = new ArrayList<Integer>();
-		List<List<Integer>> finalList = new ArrayList<>();
+		List<List<Integer>> finalList = new LinkedList<>();
 		
 		for(int i=0; i<array.length; i++){
 			
@@ -54,11 +59,13 @@ public class TwoNumberSumSubsetArray3 {
 	public static void main(String[] args){
 		
 		TwoNumberSumSubsetArray3 test = new TwoNumberSumSubsetArray3();
-		int[] a = {1,5,3,7,8,4,2,3};
+		int[] a = {1,5,3,7,8,4,2,3,1,5,-2,8};
 		//for(String str : test.sumSubset(a, 6))
 			//System.out.println(str);
 		//System.out.println(String.valueOf(test.sumSubset(a, 6)));
 		System.out.println(test.sumSubset(a, 6).toString());
+		int[] b = null;
+		System.out.println(test.sumSubset(b, 6).toString());
 		
 	}
 	

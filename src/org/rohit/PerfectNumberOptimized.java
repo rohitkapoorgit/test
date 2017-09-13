@@ -26,6 +26,9 @@ public class PerfectNumberOptimized {
 		
 		PerfectNumberOptimized test = new PerfectNumberOptimized();
 		System.out.println(test.perfect(28));
+		System.out.println(test.perfect(0));
+		System.out.println(test.perfect(1));
+		System.out.println(test.perfect(-28));
 	}
 
 

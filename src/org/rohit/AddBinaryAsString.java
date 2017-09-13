@@ -1,5 +1,6 @@
 package org.rohit;
-
+//Integer.parseInt - String to integer, can give radix parameter
+//Decimal to binary - Integer.toString(n,2) 
 public class AddBinaryAsString {
 	
 	public String addBin(String a, String b){
@@ -42,6 +43,9 @@ public class AddBinaryAsString {
 		
 		AddBinaryAsString test = new AddBinaryAsString();
 		System.out.println(test.addBin("11","1"));
+		System.out.println(test.addBin("",""));
+		System.out.println(test.addBin("","0"));
+		//System.out.println(Integer.parseInt("100",2));
 	}
 
 }

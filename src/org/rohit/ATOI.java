@@ -1,5 +1,6 @@
 package org.rohit;
-
+//To consider all possible cases
+//http://www.programcreek.com/2012/12/leetcode-string-to-integer-atoi/
 public class ATOI {
 	
 	public int atoi(String s){
@@ -21,6 +22,8 @@ public class ATOI {
 		
 		ATOI test = new ATOI();
 		System.out.println(test.atoi("483"));
+		System.out.println(Integer.parseInt("100",2));
+		System.out.println(Integer.toString(4,2));
 		
 	}
 

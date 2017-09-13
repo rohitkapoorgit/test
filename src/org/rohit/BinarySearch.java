@@ -5,6 +5,10 @@ public class BinarySearch {
 	
 	public boolean binSearch(int[] a, int target){
 		
+		if(a==null || a.length==0){
+			
+			return false;
+		}
 		int beg = 0;
 		int end = a.length-1;
 		int mid;
@@ -35,8 +39,9 @@ public class BinarySearch {
 	public static void main(String[] args){
 		
 		BinarySearch test = new BinarySearch();
-		int[] array = {2,4,5,8,9,12,15};
+		int[] array = {2,4,5,8,9,12,15,19};
 		System.out.println(test.binSearch(array, 6));
+		System.out.println(test.binSearch(array, 9));
 	}
 
 }

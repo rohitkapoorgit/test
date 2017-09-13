@@ -1,5 +1,8 @@
 package org.rohit;
-
+//https://leetcode.com/articles/shortest-unsorted-continous-subarray/
+//Using 2 loops - O(n2)
+//Below is O(nlogn)//Since we have l and r, we can also find the sub array
+//Later - http://www.geeksforgeeks.org/minimum-length-unsorted-subarray-sorting-which-makes-the-complete-array-sorted/
 import java.util.Arrays;
 
 public class ShortestUnsortedSubArray {

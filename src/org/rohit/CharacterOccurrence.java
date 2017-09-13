@@ -51,9 +51,9 @@ public class CharacterOccurrence {
 				for (String c : list) {
 		        	
 		            sb.append(c).append(" ");
-		            
+		           
 		        }
-		        
+	
 		        finalList.add(sb.toString());
 				
 			}

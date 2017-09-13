@@ -20,7 +20,7 @@ public class validSquare {
 	public static void main(String[] args){
 		
 		validSquare test = new validSquare();
-		int[] p1 = {0,0}; int[] p2 = {2,2}; int[] p3 = {2,0}; int[] p4 = {0,2};
+		int[] p1 = {-1,1}; int[] p2 = {0,1}; int[] p3 = {0,0}; int[] p4 = {-1,0};
 		System.out.println(test.square(p1,p2,p3,p4));
 	}
 

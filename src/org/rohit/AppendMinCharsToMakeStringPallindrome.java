@@ -40,6 +40,7 @@ public class AppendMinCharsToMakeStringPallindrome {
 		System.out.println(test.makePallindrome("aabb"));
 		System.out.println(test.makePallindrome("abc"));
 		System.out.println(test.makePallindrome("madam"));
+		System.out.println(test.makePallindrome("v"));
 		
 	}
 

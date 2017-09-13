@@ -1,5 +1,5 @@
 package org.rohit;
-
+//O(n3) time complexity
 public class LargestSubStringPallindrome {
 	
 	public String larPallin(String s){
@@ -31,7 +31,7 @@ public class LargestSubStringPallindrome {
 	public static void main(String[] args){
 		
 		LargestSubStringPallindrome test = new LargestSubStringPallindrome();
-		System.out.println(test.larPallin("HYABCDEFFEDCBADEDCBAGHTFYW1234554321ZWETYGDE"));
+		System.out.println(test.larPallin("HYABCDEFEDCBADEDCBAGHTFYW1234554321ZWETYGDE"));
 		
 	}
 

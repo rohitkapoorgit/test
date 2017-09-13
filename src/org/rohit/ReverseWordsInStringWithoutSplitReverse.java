@@ -9,7 +9,7 @@ public class ReverseWordsInStringWithoutSplitReverse {
 		a = a.trim();
 		for(int i=0;i<a.length();i++){
 			
-			if(!String.valueOf(a.charAt(i)).equals(" ")){
+			if(a.charAt(i) != ' '){
 				
 				s.append(a.charAt(i));
 			}
@@ -43,6 +43,9 @@ public class ReverseWordsInStringWithoutSplitReverse {
 		ReverseWordsInStringWithoutSplitReverse test = new ReverseWordsInStringWithoutSplitReverse();
 		String x = "Let's take LeetCode contest";
 		System.out.println(test.revString(x));
+		
+		String y = "rohit";
+		System.out.println(test.revString(y));
 	}
 
 

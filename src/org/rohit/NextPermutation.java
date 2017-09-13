@@ -1,5 +1,6 @@
 package org.rohit;
-
+//http://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+//O(n)
 import java.util.Arrays;
 
 public class NextPermutation {
@@ -14,14 +15,15 @@ public class NextPermutation {
 		
 		if(i>=0){
 			
-			int j = a.length -1;
+			//int j = a.length -1;
+			int j=0;
 			int diff = Integer.MAX_VALUE;
 			int number = a[i];
 			for(int k=i+1;k<a.length;k++){
 				
-				if(a[k]>number && Math.abs(a[k]-number)<diff ){
+				if(a[k]>number && a[k]-number<diff ){
 					
-					diff = Math.abs(a[k]-number);
+					diff = a[k]-number;
 					j =k;
 				}
 			}
@@ -48,7 +50,7 @@ public class NextPermutation {
 	
 	public void reverse(int[] e, int x, int y){
 		
-		while(x<y){
+		while(x<=y){
 			
 			swap(e,x,y);
 			x++;
@@ -60,8 +62,17 @@ public class NextPermutation {
 	public static void main(String[] args){
 		
 		NextPermutation test = new NextPermutation();
-		int[] array = {8,7,6,4,7,6,3 }; //8,7,6,4,3
+		int[] array = {8,7,6,4,7,6,3 }; //8,7,6,4,7,6,3
 		System.out.println(Arrays.toString(test.nextGreater(array)));
+		
+		int[] array1 = {8}; //8,7,6,4,7,6,3
+		System.out.println(Arrays.toString(test.nextGreater(array1)));
+		
+		int[] array2 = {2,6}; //8,7,6,4,7,6,3
+		System.out.println(Arrays.toString(test.nextGreater(array2)));
+		
+		int[] array3 = {6,3}; //8,7,6,4,7,6,3
+		System.out.println(Arrays.toString(test.nextGreater(array3)));
 	}
 
 }

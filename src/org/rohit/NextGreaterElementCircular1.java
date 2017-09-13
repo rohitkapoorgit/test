@@ -1,5 +1,5 @@
 package org.rohit;
-
+//Other options - https://leetcode.com/problems/next-greater-element-ii/solution/
 import java.util.Arrays;
 
 public class NextGreaterElementCircular1 {
@@ -27,14 +27,17 @@ public class NextGreaterElementCircular1 {
 				
 				else{
 					
-					if(j==l-1){
-						j=0;
-					}
-					else{
+					//if(j==l-1){
+					//	j=0;
+					//}
+					//else{
 						j++;
-					}
+					//}
 					
 					count++;
+					if(j==l){
+						j=0;
+					}
 				}
 				
 			}
@@ -47,8 +50,11 @@ public class NextGreaterElementCircular1 {
 	public static void main(String[] args){
 		
 		NextGreaterElementCircular1 test = new NextGreaterElementCircular1();
-		int[] inp = {1,2,1,3,2};
+		int[] inp = {1,2,1,3,2,4};
 		System.out.println(Arrays.toString(test.nextGreater(inp)));
+		
+		int[] inp1 = {6};
+		System.out.println(Arrays.toString(test.nextGreater(inp1)));
 	}
 
 }

@@ -21,6 +21,9 @@ public class ReverseInteger {
 		
 		ReverseInteger test = new ReverseInteger();
 		System.out.println(test.reverse(-462));
+		System.out.println(test.reverse(462));
+		System.out.println(test.reverse(0));
+		System.out.println(test.reverse(6));
 		
 	}
 

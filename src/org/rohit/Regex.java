@@ -7,7 +7,8 @@ public class Regex {
 	
 	public boolean match(String s){
 		
-		Pattern p = Pattern.compile("\\d{5}(-?\\d{4})?");
+		//Pattern p = Pattern.compile("\\d{5}(-?\\d{4})?");
+		Pattern p = Pattern.compile("\\d{5}-?(\\d{4})?");
 		Matcher m = p.matcher(s);
 		
 		return m.matches();

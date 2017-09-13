@@ -41,6 +41,9 @@ public class longestHarmonicSubSeqArray {
 		longestHarmonicSubSeqArray test = new longestHarmonicSubSeqArray();
 		int[] p1 = {1,3,2,2,5,2,3,7,2};
 		System.out.println(test.harmonicSub(p1));
+		
+		int[] p2 = {5};
+		System.out.println(test.harmonicSub(p2));
 	}
 
 }

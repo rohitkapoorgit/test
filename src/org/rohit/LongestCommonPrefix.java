@@ -1,5 +1,5 @@
 package org.rohit;
-
+//Time complexity to sort array of size n with largest string in it of size m is O(mnlogn)
 import java.util.Arrays;
 
 public class LongestCommonPrefix {

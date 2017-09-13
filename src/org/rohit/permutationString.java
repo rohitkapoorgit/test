@@ -38,6 +38,8 @@ public class permutationString {
 	    	String s2= "eidbacooo";
 			
 			System.out.println(test.checkInclusion(s1,s2));
+			
+			System.out.println(test.checkInclusion("b","b"));
 		}
 
 }

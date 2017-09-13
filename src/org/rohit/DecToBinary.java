@@ -7,7 +7,7 @@ public class DecToBinary {
 		//return Integer.toString(n,2);
 		
 		StringBuilder s = new StringBuilder();
-		while(n>0){
+		while(n!=0){
 			
 			s.append(n%2);
 			n = n/2;
@@ -21,6 +21,7 @@ public class DecToBinary {
 		DecToBinary test = new DecToBinary();
 		
 		System.out.println(test.decToBin(8));
+		System.out.println(test.decToBin(0));
 		
 	}
 

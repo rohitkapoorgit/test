@@ -7,6 +7,10 @@ public class TripletsSumTargetClosest {
 	
 	public int tripletSum(int[] array, int Target){
 		
+		if(array==null || array.length<3){
+			
+			return 0;
+		}
 		int result = array[0]+array[1]+array[array.length-1];
 		Arrays.sort(array);
 		for(int i=0; i<array.length-2; i++){
@@ -49,6 +53,8 @@ public class TripletsSumTargetClosest {
 		System.out.println(test.tripletSum(a, 1));
 		int[] b = {-1,2,3,-4,3,3,-3,9};
 		System.out.println(test.tripletSum(b, 6));
+		int[] c = {-1,2};
+		System.out.println(test.tripletSum(c, 6));
 	}
 
 }

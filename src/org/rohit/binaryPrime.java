@@ -1,5 +1,6 @@
 package org.rohit;
 
+//Integer.toString(n,2)  //decimal to binary
 public class binaryPrime {
 	
 	public boolean binaryIsPrime(String s){

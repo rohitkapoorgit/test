@@ -4,6 +4,11 @@ public class ClosestPallindrome {
 	
 	public String closestPall(String s){
 		
+		if(s==null || s.length()==0 || s.equals("0")){
+			
+			return "0";
+		}
+	
 		String a = genPall(s);
 		String b = "";
 		String c = "";
@@ -15,7 +20,8 @@ public class ClosestPallindrome {
 		long diff1 = Math.abs(Long.parseLong(s) - Long.parseLong(a));
 		
 		//when 0 at center
-		if(s.length()%2==1 && s.charAt(s.length()/2)=='0'){
+		//if(s.length()%2==1 && s.charAt(s.length()/2)=='0'){
+		if(s.charAt(s.length()/2)=='0'){
 			
 			String temp = s.substring(0, s.length()/2 +1);
 			long n = Long.parseLong(temp);
@@ -25,7 +31,8 @@ public class ClosestPallindrome {
 		}
 		
 		//when 9 at center
-		if(s.length()%2==1 && s.charAt(s.length()/2)=='9'){
+		//if(s.length()%2==1 && s.charAt(s.length()/2)=='9'){
+		if(s.charAt(s.length()/2)=='9'){
 					
 			String temp = s.substring(0, s.length()/2 +1);
 			long n = Long.parseLong(temp);
@@ -75,6 +82,16 @@ public class ClosestPallindrome {
 		ClosestPallindrome test = new ClosestPallindrome();
 		String inp = "10987";
 		System.out.println(test.closestPall(inp));
+		String inp1 = "1000";
+		System.out.println(test.closestPall(inp1));
+		String inp4 = "10000";
+		System.out.println(test.closestPall(inp4));
+		String inp2 = "10999";
+		System.out.println(test.closestPall(inp2));
+		String inp3 = "1099";
+		System.out.println(test.closestPall(inp3));
+		String inp5 = "9";
+		System.out.println(test.closestPall(inp5));
 	}
 
 

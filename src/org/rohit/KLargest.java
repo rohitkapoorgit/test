@@ -1,5 +1,7 @@
 package org.rohit;
 //queue is FIFO, stack is LIFO
+//Stack - elements inserted at top, removed from top
+//Queue - elements inserted from back, removed from front
 import java.util.PriorityQueue;
 
 public class KLargest {
@@ -22,6 +24,12 @@ public class KLargest {
 		KLargest test = new KLargest();
 		int[] array = {1,3,7,3,4,9,7,5};
 		System.out.println(String.valueOf(test.findKthLargest(array,2)));
+		
+		int[] array2 = {4,2};
+		System.out.println(String.valueOf(test.findKthLargest(array2,2)));
+		
+		int[] array3 = {1,3,4,-4};
+		System.out.println(String.valueOf(test.findKthLargest(array3,2)));
 	}
 
 }

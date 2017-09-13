@@ -1,5 +1,5 @@
 package org.rohit;
-
+//O(n+m)
 import java.util.Arrays;
 
 public class MergeSortedArray {

@@ -4,9 +4,10 @@ import java.util.Arrays;
 //maxSoFar has largest sum of contiguous sub array
 public class LargestSumContiguousSubArray {
 	
-	int s;
+	
 	public int[] largestSum(int[] array){
 		
+		int s=0;
 		int maxEndingHere = 0;int maxSoFar = 0;
 		int start = 0;int end=0;
 		for(int i=0;i<array.length;i++){
@@ -21,11 +22,11 @@ public class LargestSumContiguousSubArray {
 				
 				maxSoFar = maxEndingHere;
 				start = s;
-				end = i;
+				end = i+1;
 			}
 		}
 		
-		return Arrays.copyOfRange(array, start, end+1);
+		return Arrays.copyOfRange(array, start, end);
 	}
 	
 	public static void main(String[] args){
@@ -33,6 +34,18 @@ public class LargestSumContiguousSubArray {
 		LargestSumContiguousSubArray test = new LargestSumContiguousSubArray();
 		int[] a = new int[]{-2, -3, 4, -1, -2, 1, 5, -3};
 		System.out.println(Arrays.toString(test.largestSum(a)));
+		int[] b = new int[]{-2,1,-3,4,-1,2,1,-5,4};
+		System.out.println(Arrays.toString(test.largestSum(b)));
+		int[] c = new int[]{2, -3, 4, -1, -2, 1, -5, -3};
+		System.out.println(Arrays.toString(test.largestSum(c)));
+		int[] d = new int[]{2, -3, -4, 1, 2, -1, -5, -3};
+		System.out.println(Arrays.toString(test.largestSum(d)));
+		int[] e = new int[]{2, -3, -4, -1, -2, -1, -5, -3};
+		System.out.println(Arrays.toString(test.largestSum(e)));
+		int[] e1 = new int[]{2, 3, -4, -1, -2, -1, -5, -3};
+		System.out.println(Arrays.toString(test.largestSum(e1)));
+		int[] f = new int[]{-2, -3, -4, -1, -2, -1, -5, -3};
+		System.out.println(Arrays.toString(test.largestSum(f)));
 	}
 
 }
