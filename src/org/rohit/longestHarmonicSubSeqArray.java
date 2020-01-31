@@ -1,7 +1,7 @@
 package org.rohit;
 
 import java.util.HashMap;
-
+//difference between its maximum value and its minimum value is exactly 1
 public class longestHarmonicSubSeqArray {
 	
 	public int harmonicSub(int[] a){

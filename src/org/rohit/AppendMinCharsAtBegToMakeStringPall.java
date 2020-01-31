@@ -20,7 +20,8 @@ public class AppendMinCharsAtBegToMakeStringPall {
 			}
 		}
 		
-		return r.toString() + s;
+//		return r.toString() + s;
+		return r.toString();
 	}
 	
 	public boolean pallindrome(String a){

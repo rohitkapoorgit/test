@@ -46,6 +46,7 @@ public class IsomorphicStrings {
 		
 		IsomorphicStrings test = new IsomorphicStrings();
 		System.out.println(test.isomorphic("egg", "add"));
+		System.out.println(test.isomorphic("egg", "aad"));
 		System.out.println(test.isomorphic("foo", "bar"));
 		System.out.println(test.isomorphic("paper", "title"));
 		System.out.println(test.isomorphic("abbcdd", "ijjcii"));

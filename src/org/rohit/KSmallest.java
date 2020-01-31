@@ -8,7 +8,8 @@ public class KSmallest {
 	    PriorityQueue<Integer> q = new PriorityQueue<Integer>();
 	    int n=-1;
 	    for(int i: nums){
-	        q.offer(i);
+//	        q.offer(i);
+	    	q.add(i);
 	    }
 	    
 	    while(k>0){

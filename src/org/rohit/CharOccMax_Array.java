@@ -28,7 +28,7 @@ public class CharOccMax_Array {
         	if(max1<count[j]){
         		
         		max1 = count[j];
-        		result1 = (char)(j);
+        		result1 = (char)j;
         	}
         }
       

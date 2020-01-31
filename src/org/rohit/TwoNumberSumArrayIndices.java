@@ -22,7 +22,7 @@ public class TwoNumberSumArrayIndices {
 			
 			else{
 				
-				l.add(Arrays.asList(i,m.get(target)));
+				l.add(Arrays.asList(m.get(target),i));
 			}
 		}
 		

@@ -10,8 +10,9 @@ public class LongestCommonPrefix {
 		StringBuilder result = new StringBuilder();
 		char[] a = stringArray[0].toCharArray();
 		char[] b = stringArray[stringArray.length-1].toCharArray();
+		int len = Math.min(stringArray[0].length(), stringArray[stringArray.length-1].length());
 		
-		for (int i = 0; i < a.length; i ++){
+		for (int i = 0; i < len; i ++){
 			
             if (a[i] == b[i]){
             	
@@ -31,6 +32,8 @@ public class LongestCommonPrefix {
 		LongestCommonPrefix test = new LongestCommonPrefix();
 		String[] input = {"geeksforgeeks", "geks", "geebeturn","geek"};
 		System.out.println(test.longestCommonPrefix(input));
+		String[] input1 = {"geebeturn","geebe"};
+		System.out.println(test.longestCommonPrefix(input1));
 	}
 
 }

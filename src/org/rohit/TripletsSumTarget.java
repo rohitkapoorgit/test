@@ -60,7 +60,7 @@ public class TripletsSumTarget {
 	public static void main(String[] args){
 		
 		TripletsSumTarget test = new TripletsSumTarget();
-		int[] a = {1,4,2,3,6,8,4,6,5,1};
+		int[] a = {1,4,2,3,6,8,4,6,5,1,6,1,1};
 		System.out.println(test.tripletSum(a, 8));
 		int[] b = {3,5,0};
 		System.out.println(test.tripletSum(b, 8));

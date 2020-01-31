@@ -23,6 +23,7 @@ public class ATOI {
 		ATOI test = new ATOI();
 		System.out.println(test.atoi("483"));
 		System.out.println(Integer.parseInt("100",2));
+		System.out.println(Integer.parseInt("100"));
 		System.out.println(Integer.toString(4,2));
 		
 	}

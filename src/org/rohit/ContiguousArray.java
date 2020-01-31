@@ -2,7 +2,7 @@ package org.rohit;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-//contiguous subarray of 0 and 1 
+//contiguous subarray of 0 and 1 - input is binary array
 public class ContiguousArray {
 	
 	public int contArrayLength(int[] a){

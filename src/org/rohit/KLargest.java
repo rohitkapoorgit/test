@@ -9,7 +9,8 @@ public class KLargest {
 	public int findKthLargest(int[] nums, int k) {
 	    PriorityQueue<Integer> q = new PriorityQueue<Integer>();
 	    for(int i: nums){
-	        q.offer(i);
+//	        q.offer(i);
+	    	q.add(i);
 	 
 	        if(q.size()>k){
 	            q.poll();
@@ -30,6 +31,8 @@ public class KLargest {
 		
 		int[] array3 = {1,3,4,-4};
 		System.out.println(String.valueOf(test.findKthLargest(array3,2)));
+		int[] array4 = {2,2,3,1};
+		System.out.println(String.valueOf(test.findKthLargest(array4,3)));
 	}
 
 }

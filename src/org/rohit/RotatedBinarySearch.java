@@ -61,6 +61,12 @@ public class RotatedBinarySearch {
 		
 		int[] array3 = {2,4,5,7,8,10,12};
 		System.out.println(test.binSearch(array3, 5));
+		
+		int[] array4 = {2,5,6,0,0,1,2};
+		System.out.println(test.binSearch(array4, 0));
+		
+		int[] array5 = {2,5,6,0,0,1,2};
+		System.out.println(test.binSearch(array5, 3));
 	}
 
 }

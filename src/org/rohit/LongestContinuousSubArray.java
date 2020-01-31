@@ -1,7 +1,7 @@
 package org.rohit;
 
 import java.util.Arrays;
-
+//Would not work for repeated elements like last example
 public class LongestContinuousSubArray {
 	
 	public int[] longestContinuousArray(int[] a){
@@ -51,7 +51,9 @@ public class LongestContinuousSubArray {
 		System.out.println(Arrays.toString(test.longestContinuousArray(p7)));
 		int[] p8 = {};
 		System.out.println(Arrays.toString(test.longestContinuousArray(p8)));
-				
+		int[] p9 = {11,11,13};
+		System.out.println(Arrays.toString(test.longestContinuousArray(p9)));
+					
 	}
 
 }

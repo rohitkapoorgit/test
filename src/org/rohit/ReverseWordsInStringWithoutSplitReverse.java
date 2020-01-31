@@ -16,6 +16,11 @@ public class ReverseWordsInStringWithoutSplitReverse {
 			
 			else{
 				
+				while(i<a.length() && a.charAt(i)==' '){
+					i++;
+				}
+				i--;
+				
 				String sRev = reverse(s.toString());
 				out.append(sRev).append(" ");
 				s = new StringBuilder();
@@ -41,11 +46,13 @@ public class ReverseWordsInStringWithoutSplitReverse {
 	public static void main(String[] args){
 		
 		ReverseWordsInStringWithoutSplitReverse test = new ReverseWordsInStringWithoutSplitReverse();
-		String x = "Let's take LeetCode contest";
+		String x = "Let's take     LeetCode contest";
 		System.out.println(test.revString(x));
 		
 		String y = "rohit";
 		System.out.println(test.revString(y));
+		System.out.println(test.revString("Let's take LeetCode contest"));
+		System.out.println(test.revString(" Let's take LeetCode  contest "));
 	}
 
 

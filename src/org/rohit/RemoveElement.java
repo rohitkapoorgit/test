@@ -23,6 +23,15 @@ public class RemoveElement {
 		RemoveElement test = new RemoveElement();
 		int[] a = new int[]{3,2,5,8,3,5,7};
 		System.out.println(test.removeElement(a,3));
+		
+		int[] temp = new int[]{3,2,5,8,3,5,7};
+		int x = test.removeElement(temp,3);
+		for(int i=0;i<x;i++){
+			System.out.print(temp[i]);
+		}
+		System.out.println();
+		
+		
 		int[] b = new int[]{3,2,2,3};
 		System.out.println(test.removeElement(b,3));
 		

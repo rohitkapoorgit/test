@@ -4,7 +4,7 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-
+//Not good solution - see TwoNumberSumSubsetArray.3
 public class TwoNumberSumSubsetArray {
 	
 	public void sumSubset(int[] array, int Sum){

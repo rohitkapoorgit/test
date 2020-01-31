@@ -52,6 +52,8 @@ public class NextGreaterElementCircular1 {
 		NextGreaterElementCircular1 test = new NextGreaterElementCircular1();
 		int[] inp = {1,2,1,3,2,4};
 		System.out.println(Arrays.toString(test.nextGreater(inp)));
+		int[] a = {1,2,5,3,2,4};
+		System.out.println(Arrays.toString(test.nextGreater(a)));
 		
 		int[] inp1 = {6};
 		System.out.println(Arrays.toString(test.nextGreater(inp1)));

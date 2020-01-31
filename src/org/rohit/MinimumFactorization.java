@@ -21,6 +21,7 @@ public class MinimumFactorization {
 		MinimumFactorization test = new MinimumFactorization();
 		System.out.println(test.smallestFactorization(25));
 		System.out.println(test.smallestFactorization(48));
+		System.out.println(test.smallestFactorization(2));
 	}
 
 

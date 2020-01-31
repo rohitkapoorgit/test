@@ -7,7 +7,7 @@ import java.util.List;
 //O(n+m) time complexity, if n=m, then O(2n), which is O(n)
 //Matrix is row and column sorted
 
-//Another variation - http://www.programcreek.com/2013/01/leetcode-search-a-2d-matrix-java/
+//Another variation - http://www.programcreek.com/2013/01/leetcode-search-a-2d-matrix-java/ - Entire matrix is sorted
 public class SearchElementMatrix {
 	
 	public List<Integer> searchelement(int[][] m, int x){

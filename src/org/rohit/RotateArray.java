@@ -43,9 +43,12 @@ public class RotateArray {
 		System.out.println(Arrays.toString(test.rotateArrayRight(array,3)));
 		
 		//The above approach won't work for arrays whose length is less than k, like the below 2 examples
+		//But we can check if length is less than k. If yes, we do k = k - length
+		//So in this case, k = 3 - 2 = 1 
 		int[] array1 = {1,2};
 		System.out.println(Arrays.toString(test.rotateArrayRight(array1,3)));
 		
+		//We can check if length is 1, return same array, as there will be no affect.
 		int[] array2 = {1};
 		System.out.println(Arrays.toString(test.rotateArrayRight(array2,3)));
 	}
